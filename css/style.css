@@ -708,7 +708,7 @@ figure {
 #fh5co-counter-section,
 #fh5co-about-section,
 #fh5co-contact-section {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 
 .fh5co-portfolio-section {
@@ -1551,7 +1551,7 @@ figure {
 }
 
 #footer {
-  padding: 7em 0;
+  padding: 1em 0;
   float: left;
   width: 100%;
   background: rgba(21, 31, 44, 0.1);
