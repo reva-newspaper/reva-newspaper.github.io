@@ -1194,6 +1194,7 @@ figure {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 .feature-full-1col .image, .feature-full-1col .desc {
   float: left;
   width: 50%;
@@ -1212,6 +1213,7 @@ figure {
     width: 100%;
   }
 }
+
 .feature-full-1col .image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1234,7 +1236,60 @@ figure {
 .feature-full-1col .desc.desc2 {
   background: rgba(45, 64, 89, 0.05);
 }
-
+.feature-full-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 75%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-col .image, .feature-full-col .desc {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+}
+.feature-full-col .image, .feature-full-col .desc {
+  float: left;
+  width: 50%;
+}
+.feature-full-col .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-col .image {
+    height: 300px;
+   
+  }
+}
+.feature-full-col .desc {
+  padding: 30px;
+  background: #fff;
+}
+@media screen and (max-width: 768px) {
+  .feature-full-col .desc {
+    padding: 30px;
+  }
+}
+.feature-full-col .desc.desc2 {
+  background: rgba(45, 64, 89, 0.05);
+}
 .feature-full-2col {
   margin-bottom: 30px;
   display: -webkit-box;
