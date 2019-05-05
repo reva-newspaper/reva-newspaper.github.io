@@ -1,3 +1,57 @@
-;(function(){'use strict';var isMobile={Android:function(){return navigator.userAgent.match(/Android/i);},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i);},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i);},Opera:function(){return navigator.userAgent.match(/Opera Mini/i);},Windows:function(){return navigator.userAgent.match(/IEMobile/i);},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows());}};var fullHeight=function(){if(!isMobile.any()){$('.js-fullheight').css('height',$(window).height()-$('#fh5co-header').height());$(window).resize(function(){$('.js-fullheight').css('height',$(window).height()-$('#fh5co-header').height());});}};var isiPad=function(){return(navigator.platform.indexOf("iPad")!=-1);};var isiPhone=function(){return((navigator.platform.indexOf("iPhone")!=-1)||(navigator.platform.indexOf("iPod")!=-1));};var mainMenu=function(){$('#fh5co-primary-menu').superfish({delay:0,animation:{opacity:'show'},speed:'fast',cssArrows:true,disableHI:true});};var sliderMain=function(){$('#fh5co-hero .flexslider').flexslider({animation:"fade",slideshowSpeed:5000,directionNav:true,start:function(){setTimeout(function(){$('.slider-text').removeClass('animated fadeInUp');$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');},500);},before:function(){setTimeout(function(){$('.slider-text').removeClass('animated fadeInUp');$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');},500);}});$('#fh5co-hero .flexslider .slides > li').css('height',$(window).height());$(window).resize(function(){$('#fh5co-hero .flexslider .slides > li').css('height',$(window).height());});};var offcanvas=function(){var $clone=$('#fh5co-menu-wrap').clone();$clone.attr({'id':'offcanvas-menu'});$clone.find('> ul').attr({'class':'','id':''});$('#fh5co-page').prepend($clone);$('.js-fh5co-nav-toggle').on('click',function(){if($('body').hasClass('fh5co-offcanvas')){$('body').removeClass('fh5co-offcanvas');}else{$('body').addClass('fh5co-offcanvas');}});$('#offcanvas-menu').css('height',$(window).height());$(window).resize(function(){var w=$(window);$('#offcanvas-menu').css('height',w.height());if(w.width()>769){if($('body').hasClass('fh5co-offcanvas')){$('body').removeClass('fh5co-offcanvas');}}});}
-var mobileMenuOutsideClick=function(){$(document).click(function(e){var container=$("#offcanvas-menu, .js-fh5co-nav-toggle");if(!container.is(e.target)&&container.has(e.target).length===0){if($('body').hasClass('fh5co-offcanvas')){$('body').removeClass('fh5co-offcanvas');}}});};var parallax=function(){$(window).stellar();};var contentWayPoint=function(){var i=0;$('.animate-box').waypoint(function(direction){if(direction==='down'&&!$(this.element).hasClass('animated')){i++;$(this.element).addClass('item-animate');setTimeout(function(){$('body .animate-box.item-animate').each(function(k){var el=$(this);setTimeout(function(){el.addClass('fadeInUp animated');el.removeClass('item-animate');},k*200,'easeInOutExpo');});},100);}},{offset:'85%'});};var gridAutoHeight=function(){if(!isiPhone()||!isiPad()){$('.row-half').css('height',$('.col-half').outerHeight()/2);}$(window).resize(function(){if(!isiPhone()&&!isiPad()){$('.row-half').css('height',$('.col-half').outerHeight()/2);}});}
-var counter=function(){$('.js-counter').countTo({formatter:function(value,options){return value.toFixed(options.decimals);}});};var counterWayPoint=function(){if($('#fh5co-counter-section').length>0){$('#fh5co-counter-section').waypoint(function(direction){if(direction==='down'&&!$(this.element).hasClass('animated')){setTimeout(counter,400);$(this.element).addClass('animated');}},{offset:'90%'});}};$(function(){mainMenu();offcanvas();mobileMenuOutsideClick();contentWayPoint();sliderMain();fullHeight();gridAutoHeight();parallax();counterWayPoint();});}());
+
+(function ($) {
+    "use strict";
+
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+
+    
+    
+
+})(jQuery);

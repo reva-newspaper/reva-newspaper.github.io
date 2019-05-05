@@ -1,588 +1,98 @@
-
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ADD THIS LINE IN EVERY NEW HTML FILE-->
-
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Reva News</title>
-
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.png and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="images/favicon.png">
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/resp.css">
-
-
-	<!-- Modernizr JS -->
-	<script async src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<!--script type="text/javascript">
-	 		window.$crisp=[];window.CRISP_WEBSITE_ID="94d9176a-4434-41ab-9030-fcb7343da88f";
-	 		(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js";
-			 s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-	 </script>-->
-	</head>
-	<body>
-		<script type="text/javascript">
-			var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-			var element = document.getElementById('text');
-			if (isMobile) {
-	  			element.innerHTML = "You are using Mobile";
-			} else {
-				element.innerHTML = "You are using Desktop";
-			}
-		</script>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-		<div id="fh5co-header">
-			<header id="fh5co-header-section">
-				<div class="container">
-					<div class="nav-header">
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Reva Insight</a></h1>
-						<!-- START #fh5co-menu-wrap -->
-						<nav id="fh5co-menu-wrap" role="navigation">
-							<ul class="sf-menu" id="fh5co-primary-menu">
-							<!-- 	<li>
-									<a class="active" href="index.html">Home</a>
-								</li> -->
-								<li><a href="blog.html">Blog</a></li>
-								<!--li>
-									<a href="#" class="fh5co-sub-ddown">Academics</a>
-									 <ul class="fh5co-sub-menu">
-										<li><a href="cit.html">C & IT(active)</a></li>
-										<li><a href="deadlines.html">Deadlines</a></li>
-										<li><a href="14.html">Literature</a></li>
-									</ul>
-								</li>-->
-								<li><a href="cit.html">News</a></li>
-								<li><a href="notifications.html">Notifications</a></li>
-								<li><a href="literature.html">Literature</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="https://erp.reva.edu.in/KnowledgePro/StudentLogin.do" >Attendence</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</header>
-		</div>
-		<!-- end:fh5co-header -->
-		<aside id="fh5co-hero" class="js-fullheight">
-			<div class="flexslider js-fullheight">
-				<ul class="slides">
-					<li style="background-image: url(images/ai.jpg);">
-					<div class="overlay-gradient"></div>
-					<div class="container">
-						<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-							<div class="slider-text-inner">
-								<h2>THE DESTINATION FOR THE ULTIMATE KNOWLEDGE EXCHANGE</h2>
-							</div>
-						</div>
-					</div>
-				</li>
-			   	<li style="background-image: url(images/event1.jpg);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<h2>ENGINEERING MADE PRACTICAL AND APPROACHABLE</h2>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url(images/event.jpg);">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<h2>A MIXTURE OF ALL CULTURES</h2>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			  	</ul>
-		  	</div>
-		</aside>
-
-		<div id="fh5co-blog-section" class="grey-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-						<i class="sl-icon-note"></i>
-						<h2>Recent Events</h2>
-					</div>
-				</div>
-
-				<!--div class="row">
-					<div class="feature-full-1col">
-
-								< this is a bug<div class="image" style="background-image: url(D:/intern/intern11/acm1.jpeg);">
-								<div class="image" style="background-image: url(images/patent2.jpg);">
-								</div>
-								<div class="desc">
-									<h3>Report on Interaction with Patent Filing Agency</h3>
-									<p>An interaction session was arranged between senior faculty members of the school and Expert from Patent Filing Agency.
-									</p>
-									<p>
-										<a href="patent-meeting.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-					</div>-->
-					<div class="row">
-						<div class="feature-full-1col">
-
-						<!-- this is a bug<div class="image" style="background-image: url();"> -->
-									<div class="image" style="background-image: url(images/women1.png);"> 
-									</div>
-									<div class="desc">
-										<h3>Smt. Rukmini Memorial Lecture series on Women Empowerment 2019</h3><br>
-										<p>Unnathi-Women’s Forum organized Smt. Rukmini Memorial Lecture series on Women Empowerment 2019 .
-										</p>
-										<p>   <!--added posts/ in the href part, use this to modify all the posts -->
-											<a href="posts/women.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-									</div>
-						</div>
-						<div class="row">
-							<div class="feature-full-1col">
+<html lang="en">
+<head>
+	<title>REVA Insight</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 	
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/self1.png);">
-										</div>
-										<div class="desc">
-											<h3>“SELF DEFENCE”</h3><br>
-											<p> Student Welfare Club, School of Civil Engineering 
-											</p>
-											<p>
-												<a href="posts/self.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-				
-				
-					<div class="row">
-							<div class="feature-full-1col">
+	
+	<div class="size1 bg0 where1-parent">
+		<!-- Coutdown -->
+		<div class="flex-c-m bg-img1 size2 where1 where2 respon2" style="background-image: url('images/space.jpg');">
 
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/tech_talk.png);">
-										</div>
-										<div class="desc">
-											<h3>Events from C and IT </h3><br>
-											<p>School of C & IT<br>quiz,ideation etc..
-											</p>
-											<p>
-												<a href="posts/cIT_event.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-					<div class="feature-full-1col">
+		</div>
+		
+		<!-- Form -->
+		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
+			<div class="wrap-pic1">
+				<h1 style="color: black">REVA Insight</h1>
+			</div>
 
-								<!-- this is a bug<div class="image" style="background-image: url();"> -->
-								<div class="image" style="background-image: url(images/flim.jpg);">
-								</div>
-								<div class="desc">
-									<h3>National Student Film Festival ‘Li & Le’ </h3>
-									<p>National Student Film Festival ‘Li & Le’ was held at REVA University by The School Of
-											Arts And Humanities
+			<div class="p-t-50 p-b-60">
+				<p class="m1-txt1 p-b-36">
+					REVA Insight is Coming Soon. <span class="m1-txt2">Version 2.0</span> is on the way.
+				</p>
 
-									</p>
-									<p>
-										<a href="posts/flim.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-					</div>
-					<div class="row">
-							<div class="feature-full-1col">
+				<p class="s2-txt3 p-t-18">
+					And don’t worry, we don’t like delays too !
+				</p>
+			</div>
 
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/z44.jpg);">
-										</div>
-										<div class="desc">
-											<h3>Events conducted from 1st to 14th of March 2019<br>UDAAN 2K19 Event</h3><br>
-											<p>School Of Civil Engineering
-											</p>
-											<p>
-												<a href="posts/Udaan 2k19.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-									<div class="feature-full-1col">
-
-									<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/f1.jpg);">
-										</div>
-										<div class="desc">
-											<h3>“Static Series Compensators introduction and some practical experiences”</h3>
-											<p>Collaboration with IEEE PES Student Chapter, REVA University
-												School of EEE
-											</p>
-											<p>
-												<a href="posts/static series.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-									<div class="feature-full-1col">
-
-									<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/g1.png);">
-										</div>
-										<div class="desc">
-											<h3>REVA Academy for Corporate Excellence (RACE),</h3>
-											<p>An initiative of REVA University, inaugurated the
-												new batches of Business Analytics and Cybersecurity programs for the year 2019-20 on 9th March
-											</p>
-											<p>
-												<a href="posts/RACE.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/h1.jpg);">
-										</div>
-										<div class="desc">
-											<h3>Report on “Entrepreneurship Awareness Camp” conducted by UIIC</h3>
-											<p>School of Electrical and Electronics Engineering
-											</p>
-											<p>
-												<a href="posts/Entrepreneurship.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/imag001.jpg);">
-										</div>
-										<div class="desc">
-											<h3>“Safety measures in operations of lifts, elevators and escalators”</h3>
-											<p>School of Civil Engineering
-
-											</p>
-											<p>
-												<a href="posts/Safety.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/image03.jpg);">
-										</div>
-										<div class="desc">
-											<h3>Report on Seminar “Research Publications, Grants and IPR”</h3>
-											<p>School of Mechanical Engineering
-
-											</p>
-											<p>
-												<a href="posts/Seminar.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/image3.jpg);">
-										</div>
-										<div class="desc">
-											<h3>“Fluid Power Technology in Tipper Hydraulics”</h3>
-											<p>School of Mechanical Engineering
-
-											</p>
-											<p>
-												<a href="posts/Fluid.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-							<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/image003.jpg);">
-										</div>
-										<div class="desc">
-											<h3>Industrial visit to Bhuwalka casting and forging Pvt. Ltd,</h3>
-											<p>School of Mechanical Engineering
-
-											</p>
-											<p>
-												<a href="posts/Bhuwalka.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-
-									<div class="feature-full-1col">
-
-										<!-- this is a bug<div class="image" style="background-image: url();"> -->
-										<div class="image" style="background-image: url(images/d1.jpg);">
-										</div>
-										<div class="desc">
-											<h3>Guest Lecture on “Cancers in Women and its awareness”</h3>
-											<p>Events conducted by School of Applied Sciences
-
-											</p>
-											<p>
-												<a href="posts/cancer.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-										</div>
-							</div>
-				<div class="row">
-					<div class="feature-full-1col">
-
-								<!-- this is a bug<div class="image" style="background-image: url(D:/intern/intern11/acm1.jpeg);"> -->
-								<div class="image" style="background-image: url(images/ns4.jpg);">
-								</div>
-								<div class="desc">
-									<h3>The National Solar Challenge</h3>
-									<p>A 5 day event organized by the University in association with Dynamist Motorsports on March 1, 2019 in the campus.
-									</p>
-									<p>
-										<a href="posts/national solar challenge.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-					</div>
-
-				<div class="row">
-					<div class="feature-full-1col">
-
-								<!-- this is a bug<div class="image" style="background-image: url(D:/intern/intern11/acm1.jpeg);"> -->
-								<div class="image" style="background-image: url(images/pm2.jpg);">
-								</div>
-								<div class="desc">
-									<h3>Parents - Teachers Meeting</h3>
-									<p>  School of ECE conducted the Parent Teachers Meeting for B.Tech (For All semester)
-									</p>
-									<p>
-										<a href="posts/parent-teacher meeting.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-							</div>
-
-							<div class="row">
-									<div class="feature-full-1col">
-
-									<!-- this is a bug<div class="image" style="background-image: url();"> -->
-												<div class="image" style="background-image: url(images/z44.jpg);">
-												</div>
-												<div class="desc">
-													<h3>Events conducted from 1st to 14th of March 2019<br>UDAAN 2K19 Event</h3><br>
-													<p>School Of Civil Engineering
-													</p>
-													<p>
-														<a href="posts/Udaan 2k19.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-												</div>
-									</div>
-				<div class="row">
-					<div class="feature-full-1col">
-
-								<!-- this is a bug<div class="image" style="background-image: url(D:/intern/intern11/acm1.jpeg);"> -->
-								<div class="image" style="background-image: url(images/acm1.jpeg);">
-								</div>
-								<div class="desc">
-									<h3>Code Wars V1.0</h3>
-									<p>  REVA University ACM Student Chapter on 26th February,  2019 in Swami Vivekananda Block.
-									</p>
-									<p><a href="posts/acm.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="feature-full-1col">
-											<div class="image" style="background-image: url(images/ccpi.jpg);">
-											</div>
-											<div class="desc">
-												<h3>Seminar on Data Science and Cloud Computing</h3>
-												<p>School of Computing and Information Technology organized Seminar on Data
-													Science and Cloud Computing
-
-												</p>
-												<p><a href="posts/data.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="feature-full-1col">
-														<div class="image" style="background-image: url(images/IMG_1_5G.jpg);">
-														</div>
-														<div class="desc">
-															<h3>Technical Talk Report on “Engineering 5G Communication Systems”</h3>
-															<p>School of Electronics and Communication Engineering  </br>The School of ECE had organized technical talk on “Engineering 5G Communication Systems” on 28th   February
-
-															</p>
-															<p><a href="posts/5g.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-														</div>
-													</div>
-													<div class="row">
-														<div class="feature-full-1col">
-																	<div class="image" style="background-image: url(images/bl1.jpeg);">
-																	</div>
-																	<div class="desc">
-																		<h3>Faculty Development Program Report on “Bloom’s Taxonomy”</h3>
-																		<p>The School of ECE had organized FDP on “Bloom’s Taxonomy” on 2nd March 2019 between 2:00 pm to 4:00 pm in Aryabhatta Seminar hall, C V Raman Block.
-																		</p>
-																		<p><a href="posts/bloom.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-																	</div>
-																</div>
-																<div class="row">
-																	<div class="feature-full-1col">
-																				<div class="image" style="background-image: url(images/nss1.jpeg);">
-																				</div>
-																				<div class="desc">
-																					<h3>Activities from school of civil engineering</h3>
-																					<p>School of civil had conducted events ...
-																					</p>
-																					<p><a href="posts/civil.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-																				</div>
-																		</div>
-							<div class="row">
-								<div class="feature-full-1col">
-											<div class="image" style="background-image: url(images/es3.png);">
-														</div>
-														<div class="desc">
-															<h3>ESPRIMERE-Open MIC</h3>
-															<p>Report on
-																ESPRIMERE-Open MIC
-																Organised by LITWITS- RUSOA Literary club
-															</p>
-															<p><a href="posts/esprimere.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-														</div>
-													</div>
-
-													<div class="feature-full-1col">
-														<div class="image" style="background-image: url(images/sdp1.png);">
-														</div>
-														<div class="desc">
-															<h3>SDP on Technical Paper Writing</h3>
-															<p>  School of ECE organized SDP on Technical Paper Writing for 8th Semester students
-															</p>
-															<p><a href="posts/sdp.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-														</div>
-													</div>
-				<div class="row">
-					<div class="feature-full-1col">
-								<div class="image" style="background-image: url(images/blooddonation.png);">
-								</div>
-								<div class="desc">
-									<h3>BLOOD DONATION CAMP</h3>
-									<p>BLOOD DONATION CAMP Organized by School of C&IT in association with BANGALORE BLOOD BANK</p>
-									<p><a href="posts/blood.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-								</div>
-							</div>
-							<div class="feature-full-2col">
-								<div class="blog-inner">
-								<div class="image" style="background-image: url(images/chess1.jpeg);">
-									</div>
-									<div class="desc">
-									<h3>Chess competition inter school tournament</h3>
-										<p> the school of CIT students  participated in chess competition inter school Tournament held toda</p>
-										<p><a href="posts/chess.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-									</div>
-								</div>
-								<div class="blog-inner">
-									<div class="image" style="background-image: url(images/data1.jpg);">
-									</div>
-									<div class="desc">
-										<h3>Knowledge session on Data science and cloud computing:</h3>
-										<p><br>School of computing and information technology organised a seminar on Data science and cloud computing.
-										</p>
-										<p><a href="posts/data1.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-									</div>
-									</div>
-				<div class="feature-full-2col">
-					<div class="blog-inner">
-					<div class="image" style="background-image: url(images/me1.png);">
-						</div>
-						<div class="desc">
-						<h3>SCHOOL OF MECHANICAL ENGINEERING</h3>
-							<p>1.Industrial visit to Rittal India Pvt. Ltd..Doddaballapur, Bengaluru.<br>2.Student Development Programme</p>
-							<p><a href="posts/me.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-						</div>
-					</div>
-						<div class="blog-inner">
-						<div class="image" style="background-image: url(images/csa1.jpeg);">
-						</div>
-						<div class="desc">
-							<h3>SCHOOL OF COMPUTER SCIENCE AND APPLICATIONS</h3>
-							<p>1.Two days Workshop on “Server Side Scripting and Web Apps Development using Frameworks”<br>
-							2.Guest Lecture on “Importance of Cyber Security”</p>
-							<p><a href="posts/csa.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-						</div>
-					</div>
-				<div class="feature-full-2col">
-					<div class="blog-inner">
-					<div class="image" style="background-image: url(images/gg1.png);">
-						</div>
-						<div class="desc">
-						<h3>GO GREEN CAMPAIGN</h3>
-							<p>GO GREEN CAMPAIGN Organized by School of COMPUTING & INFORMATION TECHNOLOGY</p>
-							<p><a href="posts/gogreen.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-						</div>
-					</div>
-						<div class="blog-inner">
-						<div class="image" style="background-image: url(images/iim.jpg);">
-						</div>
-						<div class="desc">
-							<h3>REVA STUDENTS AT IIM KOZHIKODE</h3>
-							<p>REVA University was represented by selected students from School of Management Studies  in the B-Plan competiton.</p>
-							<p><a href="posts/iim.html" class="btn btn-primary btn-luxe-primary">Learn More</a></p>
-						</div>
-					</div>
+			<div class="flex-w">
+				<a href="https://github.com/reva-newspaper/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-github"></i>
+				</a>
+				</a>
 			</div>
 		</div>
-
 	</div>
-	 <center>FOLLOW US ON :
-								<p class="fh5co-social-icons">
-									<a href="#"><i class="icon-facebook2"></i></a>
-									<a href="#"><i class="icon-youtube"></i></a>
-									<a href="#"><i class="icon-twitter2"></i></a>
-									<a href="#"><i class="icon-mail"></i></a>
-									<a href="https://www.instagram.com/reva_news_box/"><i class="icon-instagram"></i></a>
-									<a href="https://github.com/reva-newspaper"><i class="icon-github"></i></a>
-								</p></center>
-	<!-- END fh5co-wrapper -->
 
-	<!-- jQuery -->
 
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Superfish -->
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
 
-	<!-- Main JS (Do not remove) -->
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 6,
+			endtimeHours: 00,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	</body>
+</body>
 </html>
