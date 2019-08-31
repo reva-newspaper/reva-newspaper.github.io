@@ -775,5 +775,47 @@ figure figcaption {
     float: none;
   }
 }
+.btn-11 {
+  position: relative;
+  $btn-color: random-color($max:200);
+  $btn-color-dark: shade($btn-color, 40%);
+  color: tint($btn-color);
 
+  &:before,
+  &:after {
+    @include absolute(50%);
+    content: '';
+    @include size(20px);
+    background-color: $btn-color;
+    border-radius: 50%;
+  }
+
+  &:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+    // animation: criss-cross-left 0.8s reverse;
+  }
+  &:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+    // animation: criss-cross-right 0.8s reverse;
+  }
+
+  &:hover {
+    color: tint($btn-color, 75%);
+
+    &:before,
+    &:after {
+      // @include size($btn-width);
+    }
+    &:before {
+      animation: criss-cross-left 0.8s both;
+      animation-direction: alternate;
+    }
+
+    &:after {
+      animation: criss-cross-right 0.8s both;
+      animation-direction: alternate;
+    }
+  }
 /*# sourceMappingURL=style.css.map */
