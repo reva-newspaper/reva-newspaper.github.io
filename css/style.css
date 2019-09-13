@@ -818,18 +818,20 @@ figure figcaption {
       animation-direction: alternate;
     }
   }
-  .iframe-container {
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
+  .myIframe {
+       position: relative;
+       padding-bottom: 65.25%;
+       padding-top: 30px;
+       height: 0;
+       overflow: auto;
+       -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+       border: solid black 1px;
   }
-
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
+  .myIframe iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
   }
 /*# sourceMappingURL=style.css.map */
